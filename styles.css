@@ -1,9 +1,13 @@
 body {
   font-family: 'Lobster', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f3e5dc; /* Marrón pastel */
+  background-image: url('bg1.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: rgba(236, 71, 5, 1);
+  text-shadow: 2px 2px 4px rgb(102, 31, 2);; /* Sombra negra con opacidad */
   margin: 0;
   padding: 0;
-  color: #5e4a42;
   overflow-x: hidden;
 }
 
@@ -16,13 +20,20 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #f3e5dc;
+  background-color: rgba(255, 98, 0, 0); /* Ajusta la opacidad según lo necesites */
 }
+
 
 .header-content {
   flex: 1;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 8vh;
+  display: flex;
+  flex-direction: column;  /* Organiza los elementos en una columna */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center;     /* Centra horizontalmente */
+  text-align: center;      /* Centra el texto dentro del contenedor */
+  height: 100vh;           /* O ajusta según sea necesario */
 }
 
 
@@ -34,12 +45,13 @@ header {
 
 .countdown {
   text-align: center;
+  font-size: 36px;
   padding: 20px;
 }
 
 #countdown-timer {
-  font-size: 64px;
-  color: #8b4513;
+  font-size: 120px;
+  color: #ec4705;
 }
 
 .party-details {
@@ -52,9 +64,13 @@ header {
 
 .party-image img {
   max-width: 500px;
-  transform: scale(1.2);
-  transform-origin: top left;
+  transform-origin: center;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.party-image img:hover {
+  transform: scale(1.2);
 }
 
 .party-info {
@@ -73,7 +89,7 @@ header {
 }
 
 .services ul li {
-  font-size: 18px;
+  font-size: 36px;
   margin: 10px 0;
 }
 
