@@ -1,0 +1,147 @@
+body {
+  font-family: 'Lobster', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3e5dc; /* Marrón pastel */
+  margin: 0;
+  padding: 0;
+  color: #5e4a42;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Lobster', cursive;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f3e5dc;
+}
+
+.header-content {
+  flex: 1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 8vh;
+}
+
+
+.header-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.countdown {
+  text-align: center;
+  padding: 20px;
+}
+
+#countdown-timer {
+  font-size: 64px;
+  color: #8b4513;
+}
+
+.party-details {
+  display: flex;
+  font-size: 36px;
+  justify-content: space-around;
+  padding: 200px;
+  align-items: center;
+}
+
+.party-image img {
+  max-width: 500px;
+  transform: scale(1.2);
+  transform-origin: top left;
+  border-radius: 10px;
+}
+
+.party-info {
+  max-width: 400px;
+}
+
+.services {
+  padding: 20px;
+  font-size: 36px;
+  text-align: center;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services ul li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.map {
+  padding: 20px;
+  text-align: center;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  background-color: #ddd;
+}
+
+.rsvp-form {
+  padding: 20px;
+  text-align: center;
+}
+
+.rsvp-form form {
+  display: inline-block;
+  text-align: left;
+  max-width: 400px;
+  width: 100%;
+}
+
+.rsvp-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.rsvp-form input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.rsvp-form button{
+  margin-top: 40px;
+  padding: 10px 20px;
+  background-color: #8b4513;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: left;
+}
+
+.rsvp-form button:hover {
+  background-color: #a0522d;
+}
+
+.map {
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 50px; /* Agrega margen inferior para separar el mapa del formulario */
+}
+
+.map iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
+
+.rsvp-form {
+  padding: 20px;
+  text-align: center;
+  clear: both; /* Asegura que el formulario no se superponga con otros elementos */
+}
+
