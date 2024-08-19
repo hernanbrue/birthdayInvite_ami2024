@@ -5,7 +5,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   color: rgb(246, 133, 89);
-  text-shadow: 4px 4px 4px rgb(107, 47, 1); 
+  text-shadow: 4px 4px 4px rgb(23, 13, 0); 
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Evita el desplazamiento lateral */
@@ -30,9 +30,11 @@ header {
   background-color: rgba(255, 98, 0, 0); 
 }
 
+
+
 .header-content {
   flex: 1;
-  font-size: 8vh;
+  font-size: 4vh;
   display: flex;
   flex-direction: column; 
   justify-content: center;
@@ -42,6 +44,16 @@ header {
   height: 100vh;
 }
 
+.header-content h1:first-of-type {
+  font-size: 20vh; /* Tamaño del primer h1 */
+}
+
+.header-content h1 {
+  line-height: 0.2; /* Ajusta el espaciado entre líneas dentro de cada h1 */
+}
+
+
+
 .countdown {
   text-align: center;
   font-size: 36px;
@@ -50,7 +62,7 @@ header {
 
 #countdown-timer {
   font-size: 120px;
-  color: #ec4705;
+  color: rgb(246, 133, 89);
 }
 
 .party-details {
