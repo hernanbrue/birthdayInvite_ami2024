@@ -26,15 +26,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   background-color: rgba(255, 98, 0, 0); 
 }
 
-
-
 .header-content {
   flex: 1;
-  font-size: 4vh;
+  font-size: 4vh; /* Tamaño base */
   display: flex;
   flex-direction: column; 
   justify-content: center;
@@ -49,10 +47,9 @@ header {
 }
 
 .header-content h1 {
-  line-height: 0.2; /* Ajusta el espaciado entre líneas dentro de cada h1 */
+  line-height: 1.1; /* Ajusta el espaciado entre líneas dentro de cada h1 */
+  margin: 0; /* Elimina márgenes adicionales */
 }
-
-
 
 .countdown {
   text-align: center;
@@ -85,7 +82,7 @@ header {
 .party-image img {
   width: 100%; /* Ocupa el ancho completo del contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
-  max-width: 100%; /* Asegura que no exceda el ancho de su contenedor */
+  max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
@@ -121,7 +118,7 @@ header {
 
 .map {
   font-size: 36px;
-  padding: 0px; /* Elimina el padding para que el mapa ocupe todo el ancho */
+  padding: 0; /* Elimina el padding para que el mapa ocupe todo el ancho */
   text-align: center;
   margin-bottom: 30px;
   clear: both; /* Evita que elementos flotantes se superpongan */
@@ -148,7 +145,7 @@ header {
 
 .rsvp-form {
   max-width: 90%; /* Reduce el ancho máximo para pantallas pequeñas */
-  font-size: 36px;
+  font-size: 24px; /* Ajuste para pantallas más pequeñas */
   padding: 20px;
   text-align: center;
   margin: 5vh auto 0 auto; /* Espacio superior para separar del mapa */
@@ -156,7 +153,6 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  clear: both; /* Asegura que no se superponga al mapa */
   box-sizing: border-box; /* Asegura que padding y border no causen desbordamiento */
 }
 
@@ -179,8 +175,8 @@ header {
 }
 
 .rsvp-form button {
-  width: 25vh;
-  height: 10vh;
+  width: 80%; /* Ajusta el ancho del botón en pantallas pequeñas */
+  height: auto; /* Ajusta la altura del botón según el contenido */
   margin-top: 40px;
   padding: 10px 20px;
   background-color: #e56306;
@@ -210,7 +206,30 @@ header {
     font-size: 80px;
   }
 
+  .party-details {
+    font-size: 24px; /* Ajusta para que no quede demasiado pequeño */
+  }
 
+  .services {
+    font-size: 24px;
+  }
+
+  .services ul li {
+    font-size: 24px;
+  }
+
+  .map {
+    margin-bottom: 20px;
+  }
+
+  #map {
+    height: 250px;
+  }
+
+  .party-image img {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -227,15 +246,15 @@ header {
   }
 
   .party-details {
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .services {
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .services ul li {
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .map {
@@ -246,20 +265,7 @@ header {
     height: 200px;
   }
 
-}
-@media (max-width: 768px) {
-  .party-info, .services, .important-notes {
-    font-size: 36px; /* Ajuste proporcional para pantallas más pequeñas */
-  }
-
-  .party-image img {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .party-info, .services, .important-notes {
+  .party-info, .important-notes {
     font-size: 16px;
   }
 }
