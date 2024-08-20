@@ -5,7 +5,16 @@ body {
   background-position: center;
   background-attachment: fixed;
   color: rgb(246, 133, 89);
-  text-shadow: 4px 4px 4px rgb(23, 13, 0); 
+  text-shadow: 
+    -2px -2px 0 rgb(96, 0, 101),   /* Sombra en la esquina superior izquierda */
+    2px -2px 0 rgb(96, 0, 101),    /* Sombra en la esquina superior derecha */
+    -2px 2px 0 rgb(96, 0, 101),    /* Sombra en la esquina inferior izquierda */
+    2px 2px 0 rgb(96, 0, 101),     /* Sombra en la esquina inferior derecha */
+    4px 4px 4px rgb(96, 0, 101),   /* Sombra general para profundidad */
+    0 0 10px rgba(246, 133, 89, 0.8),  /* Primera capa de glow */
+    0 0 20px rgba(246, 133, 89, 0.6),  /* Segunda capa de glow */
+    0 0 30px rgba(246, 133, 89, 0.4),  /* Tercera capa de glow */
+    0 0 40px rgba(246, 133, 89, 0.2);  /* Cuarta capa de glow */
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Evita el desplazamiento lateral */
@@ -13,6 +22,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   box-sizing: border-box; /* Asegura que padding y border no causen desbordamiento */
+  letter-spacing: 2px;
 }
 
 /* Añadir estas reglas para asegurar que todos los elementos hijos respeten el tamaño del viewport */
